@@ -1,0 +1,1 @@
+Não altere os arquivos da branch "template". Crie uma nova branch para realizar modificações à página oficial, localizada em "main".
