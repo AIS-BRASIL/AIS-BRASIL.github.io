@@ -1,18 +1,28 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="pt-br">
 	<head>
 		<title>AIS BRASIL | Automação, Inovação & Sustentabilidade</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Nós somos a primeira tech-startup de Nova Friburgo." />
 		<meta name="keywords" content="ais, AIS, ais brasil, AIS Brasil, AIS BRASIL, automacao, inovacao, sustentabilidade, tecnologia, startup nova friburgo, startup, tech startup, Brasil" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/3d-carousel.css" />
 	</head>
 	<body class="is-preload">
 
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>AIS BRASIL</h1>
+					<p>Automação, Inovação & Sustentabilidade</p>
+				</div>
+				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
+			</section>
+
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="#">AIS BRASIL</a>
+				<a class="logo" href="#"></a>
 				<nav>
 					<a href="#menu">Acesso rápido</a>
 				</nav>
@@ -27,15 +37,6 @@
 					<li><a href="./sobre">Sobre</a></li>
 				</ul>
 			</nav>
-
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<h1>AIS BRASIL</h1>
-					<p>Automação, Inovação & Sustentabilidade</p>
-				</div>
-				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
-			</section>
 
 		<!-- Highlights -->
 			<section class="wrapper">
@@ -113,86 +114,54 @@
 						<h2>NÓS REALIZAMOS</h2>
 						<p>Conheça os fundadores, apoiadores e quem compõem atualmente o time da AIS BRASIL.</p>
 					</header>
-					<div class="testimonials">
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>bio...</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>Rodrigo C. Arruda</strong> <span>Founder & CTO - AIS Brasil</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>bio...</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>Vinícius Fracasso</strong> <span>Founder & CEO - AIS Brasil</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>bio...</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>Francisco Marchon</strong> <span>Co-Founder & CCO - AIS Brasil</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>bio...</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>Walter Oliveira</strong> <span>Co-Founder & Business Advisor - AIS Brasil</span></p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<blockquote>
-									<p>bio...</p>
-								</blockquote>
-								<div class="author">
-									<div class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</div>
-									<p class="credit">- <strong>ACIANF Associação Comercial, Industrial e Agrícula de Nova Friburgo</strong> <span>Apoiadores</span></p>
-								</div>
-							</div>
-						</section>
-					</div>
+					<div id="carousel">
+
+						<!--
+						<div class="hideLeft">
+							<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+						</div>
+						
+
+						<div class="prevLeftSecond">
+							<img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+						</div>
+						-->
+
+						<div class="prev">
+							<p class="bio">Francisco Marchon | <strong>Co-Founder & COO AIS Brasil</strong> </p>
+						</div>
+
+						<div class="selected">
+							<p class="bio">Vinícius Fracasso | <strong>Founder & CEO AIS Brasil</strong> </p>
+						</div>
+
+						<div class="next">
+							<img src="./images/rodrigo.jpg" alt=""/>
+							<p class="bio">Rodrigo Arruda | <strong>Founder & CTO AIS Brasil</strong> </p>
+						</div>
+
+						<div class="nextRightSecond">
+							<img src="./images/walter.jpg" alt=""/>
+							<p class="bio">Walter Oliveira | <strong>Co-Founder & Business Advisor</strong> </p>
+						</div>
+
+						<!--
+						<div class="hideRight">
+							<img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+						</div>
+						-->
+				    </div>
+				    <div class="center">
+				      <button id="prev"><</button>
+				      <button id="next">></button>
+				    </div>
 				</div>
 			</section>
 
 
-		<!-- Startup -->
 			<section>
-				<div class="inner">
-					<div class="content" style="display: inline-block;">
-						<h2>Fermentado por</h2>
-						<div class="image">
-							<img src="#" alt="" />
-						</div>
-					</div>
+				<div class="center">
+
 				</div>
 			</section>
 
@@ -235,6 +204,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/carousel.js"></script>
+			<script>
+		    	window.addEventListener('scroll', function() {
+			  var header = document.getElementById('header');
+			  var logo = document.querySelector('.logo');
+			  var bannerHeight = document.getElementById('banner').offsetHeight;
+			  var scrollPosition = window.scrollY;
+
+			  if (scrollPosition > bannerHeight) {
+			    header.classList.add('dark');
+			    logo.classList.add('dark');
+			  } else {
+			    header.classList.remove('dark');
+			    header.classList.remove('dark');
+			  }
+			});
+		  </script>
 
 	</body>
 </html>
