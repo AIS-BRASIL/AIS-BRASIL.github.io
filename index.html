@@ -1,27 +1,18 @@
 <!DOCTYPE HTML>
-<html lang="pt-br">
+<html>
 	<head>
 		<title>AIS BRASIL | Automação, Inovação & Sustentabilidade</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="Nós somos a primeira tech-startup de Nova Friburgo." />
 		<meta name="keywords" content="ais, AIS, ais brasil, AIS Brasil, AIS BRASIL, automacao, inovacao, sustentabilidade, tecnologia, startup nova friburgo, startup, tech startup, Brasil" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<h1>AIS BRASIL</h1>
-					<p>Automação, Inovação & Sustentabilidade</p>
-				</div>
-				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
-			</section>
-
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="#"></a>
+				<a class="logo"></a>
 				<nav>
 					<a href="#menu">Acesso rápido</a>
 				</nav>
@@ -36,6 +27,15 @@
 					<li><a href="./sobre">Sobre</a></li>
 				</ul>
 			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>AIS BRASIL</h1>
+					<p>Automação, Inovação & Sustentabilidade</p>
+				</div>
+				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
+			</section>
 
 		<!-- Highlights -->
 			<section class="wrapper">
@@ -88,8 +88,8 @@
 								</header>
 								<p>Com este simples app gratuito você poderá ter na palma da sua mão os dados necessários para o preenchimento da sua ficha de hóspede. Dê adeus ao papel.</p>
 								<a target="_blank" href="https://github.com/AIS-BRASIL/Downloads/releases" class="button primary">Saiba mais</a>
-								<div style="display: inline-block; margin-top: 5px">
-									<a href="#" class="button small" style="margin-right: 10px;">Android</a>
+								<div style="display: inline-block; margin-top: 0.3rem">
+									<a href="#" class="button small" style="margin-right: 0.2rem;">Android</a>
 									<a href="#" class="button small">IOS</a>
 								</div>
 							</div>
@@ -103,9 +103,13 @@
 				<div class="inner">
 					<h2>NÓS ACREDITAMOS</h2>
 					<p>A AIS Brasil é uma startup friburguense que nasceu das ideias dos  estudantes universitários Rodrigo Arruda e Vinícius Fracasso, que possuem sede de resolver necessidades das indústrias locais. Contando com toda a expertise de anos de indústria do Walter José e Francisco Marchon desenvolveu projetos e avançou para soluções em áreas de tecnologia, especialmente na área de fechaduras.</p>
+					<div class="center">
+						<a target="_blank" class="button primary" href="./sobre">Saiba mais</a>
+					</div>
 				</div>
 			</section>
-
+    
+    
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -145,22 +149,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-		    	window.addEventListener('scroll', function() {
-			  var header = document.getElementById('header');
-			  var logo = document.querySelector('.logo');
-			  var bannerHeight = document.getElementById('banner').offsetHeight;
-			  var scrollPosition = window.scrollY;
-
-			  if (scrollPosition > bannerHeight) {
-			    header.classList.add('dark');
-			    logo.classList.add('dark');
-			  } else {
-			    header.classList.remove('dark');
-			    header.classList.remove('dark');
-			  }
-			});
-		  </script>
-
+			<script src="assets/js/carousel.js"></script>
+			<script src="assets/js/header.js"></script>
 	</body>
 </html>
