@@ -1,0 +1,95 @@
+#carousel {
+  position: relative;
+  height: 40rem;
+  overflow: hidden;
+}
+#carousel div {
+  background-color: #ce1b28;
+  border-radius: 5px;
+
+  width: 25rem;
+  height: 40rem;
+
+  position: absolute;
+
+  transition: all 1s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  border-radius: 5px;
+}
+#carousel div p
+{
+  text-align: center;
+  font-size: 0.9rem !important;
+}
+
+
+@media screen and (max-width: 736px) {
+  #carousel{
+    height: 30rem; }
+  #carousel div {
+    width: 20rem;
+    height: 35rem; }}
+
+
+
+/* Animação  */
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  
+}

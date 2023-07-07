@@ -2462,7 +2462,7 @@ body {
     padding: 0 0.75rem;
     text-decoration: none; }
     #header > nav > a:hover {
-      color: #ffffff; }
+      color: gray; }
     #header > nav > a[href="#menu"] {
       text-decoration: none;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
