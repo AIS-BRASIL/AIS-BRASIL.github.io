@@ -51,6 +51,11 @@ section, summary, time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+  iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -578,8 +583,6 @@ ul {
         display: inline-block;
         margin-right: 1rem;
         text-align: center;
-        width: 2rem;
-        height: 2rem;
         line-height: 2rem;
         background: rgba(0, 0, 0, 0.5); }
   ul.alt {
@@ -704,6 +707,7 @@ table.alt tbody tr td {
     text-align: center; }
     .highlights .content .icon {
       font-size: 5rem; }
+
   .highlights > div > :last-child {
     margin-bottom: 0; }
   @media screen and (max-width: 980px) {
@@ -834,88 +838,6 @@ table.alt tbody tr td {
 {
   color: #ce1b28;
 }
-
-/* Actions */
-ul.actions {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  cursor: default;
-  list-style: none;
-  margin-left: -1rem;
-  padding-left: 0; }
-  ul.actions li {
-    padding: 0 0 0 1rem;
-    vertical-align: middle; }
-  ul.actions.special {
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    width: calc(100% + 1rem); }
-  ul.actions.stacked {
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 0; }
-    ul.actions.stacked li {
-      padding: 1.3rem 0 0 0; }
-      ul.actions.stacked li:first-child {
-        padding-top: 0; }
-  ul.actions.fit {
-    width: calc(100% + 1rem); }
-    ul.actions.fit li {
-      -moz-flex-grow: 1;
-      -webkit-flex-grow: 1;
-      -ms-flex-grow: 1;
-      flex-grow: 1;
-      -moz-flex-shrink: 1;
-      -webkit-flex-shrink: 1;
-      -ms-flex-shrink: 1;
-      flex-shrink: 1;
-      width: 100%; }
-      ul.actions.fit li > * {
-        width: 100%; }
-    ul.actions.fit.stacked {
-      width: 100%; }
-  @media screen and (max-width: 480px) {
-    ul.actions:not(.fixed) {
-      -moz-flex-direction: column;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      margin-left: 0;
-      width: 100% !important; }
-      ul.actions:not(.fixed) li {
-        -moz-flex-grow: 1;
-        -webkit-flex-grow: 1;
-        -ms-flex-grow: 1;
-        flex-grow: 1;
-        -moz-flex-shrink: 1;
-        -webkit-flex-shrink: 1;
-        -ms-flex-shrink: 1;
-        flex-shrink: 1;
-        padding: 1rem 0 0 0;
-        text-align: center;
-        width: 100%; }
-        ul.actions:not(.fixed) li > * {
-          width: 100%; }
-        ul.actions:not(.fixed) li:first-child {
-          padding-top: 0; }
-        ul.actions:not(.fixed) li input[type="submit"],
-        ul.actions:not(.fixed) li input[type="reset"],
-        ul.actions:not(.fixed) li input[type="button"],
-        ul.actions:not(.fixed) li button,
-        ul.actions:not(.fixed) li .button {
-          width: 100%; }
-          ul.actions:not(.fixed) li input[type="submit"].icon:before,
-          ul.actions:not(.fixed) li input[type="reset"].icon:before,
-          ul.actions:not(.fixed) li input[type="button"].icon:before,
-          ul.actions:not(.fixed) li button.icon:before,
-          ul.actions:not(.fixed) li .button.icon:before {
-            margin-left: -0.5rem; } }
 
 /* Grid */
 .row {
@@ -2723,4 +2645,29 @@ body.is-menu-visible #menu {
 {
   margin: 2rem;
   text-align: center;
+}
+
+
+/* Actions */
+.actions {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center; }
+  .actions > a{
+    max-width: 50%;
+    flex: 1;
+    margin-top: 0.2rem;
+    margin-right: 0.1rem;
+  }
+  .actions > a:last-child{
+    margin-right: 0;
+  }
+
+.content .actions .icon{
+  font-size: 1rem;
+}
+.content .actions .icon::before{
+  font-size: 1.25rem;
 }
