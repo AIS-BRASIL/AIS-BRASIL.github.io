@@ -1864,6 +1864,7 @@ ul.icons {
 
 /* CTA */
 #cta {
+  border-top: solid 1px #000;
   background-color: #ce1b28;
   color: rgba(255, 255, 255, 0.9);
   background-attachment: fixed;
@@ -2670,4 +2671,41 @@ body.is-menu-visible #menu {
 }
 .content .actions .icon::before{
   font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+#by a{
+  width: 0rem;
+}
+#by
+{
+  display: flex;
+  align-items: center;
+}
+#by h2{
+  margin-right: 5rem;
+  padding: 0;
+}
+#dni
+{
+  background-color: #4D2559;
+  border-radius: 1rem 5rem;
+  max-width: 50%;
+  min-width: 200px;
+  padding: 2rem;
+}
+@media screen and (max-width: 580px){
+  #by{
+    display: block;
+    text-align: center;
+  }
+  #by h2{
+    margin-right: 0;
+  }
+
 }
