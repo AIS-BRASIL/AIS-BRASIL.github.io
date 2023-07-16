@@ -1,0 +1,26 @@
+@media screen and (max-width: 720px)
+{
+  #homebuttons{
+  position: fixed;
+  bottom: 0;
+}
+#homebuttons a
+{
+  padding: 0;
+  width: 100%;
+  margin-bottom: 0.3rem; }
+  #homebuttons a:last-child{
+    margin-bottom: 1rem;
+  }
+
+  ul.alt{
+    display: grid;
+    justify-content: center;
+  }
+  ul.alt li {
+    width: 100vw;
+    padding: 0.5rem 0; }
+  #cta{
+    height: 100vh;
+  }
+}
