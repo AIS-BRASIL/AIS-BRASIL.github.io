@@ -2534,9 +2534,6 @@ body.is-menu-visible #menu {
   padding: 2rem;
   cursor: pointer;
 }
-#homebuttons{
-  display: none;
-}
 
 
 @media screen and (max-width: 580px){
