@@ -12,6 +12,10 @@
     bottom: 0;
     width: 100%;
     z-index: 10; }
+    #homebuttons .inner{
+      background-color: transparent !important;
+      padding: 0 !important;
+    }
   #homebuttons .inner a {
     padding: 0;
     width: inherit;
