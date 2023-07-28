@@ -32,6 +32,7 @@
   ul.alt{
     display: grid;
     justify-content: center;
+    line-height: 1.8rem;
   }
   ul.alt li {
     width: 100vw;
@@ -46,4 +47,9 @@
   #footer{
     height: 20vh;
   }
+  #footer .inner{
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
 }
