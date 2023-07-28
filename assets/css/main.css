@@ -45,7 +45,8 @@ em, i {
   font-style: italic; }
 
 p {
-  margin: 0 0 2rem 0; }
+  margin: 0 0 2rem 0;
+  letter-spacing: 0.125rem; }
 
 header.special {
   text-align: center;
@@ -149,7 +150,8 @@ strong, b {
   color: #555555; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #555555; }
+  color: #555555;
+  letter-spacing: -0.08rem }
 
 blockquote {
   border-left-color: rgba(0, 0, 0, 0.25); }
@@ -1501,18 +1503,9 @@ ul.icons {
 
 /* Wrapper */
 .wrapper {
-  padding: 8rem 0 6rem 0 ;
+  padding: 5rem 0 3rem 0;
   position: relative;
   z-index: 1; }
-  @media screen and (max-width: 1280px) {
-    .wrapper {
-      padding: 4rem 0 2rem 0 ; } }
-  @media screen and (max-width: 736px) {
-    .wrapper {
-      padding: 3rem 0 1rem 0 ; } }
-  @media screen and (max-width: 480px) {
-    .wrapper {
-      padding: 2rem 0 0.1rem 0 ; } }
 
 /* Banner */
 #banner {
@@ -1685,7 +1678,8 @@ ul.icons {
     transition: opacity 1s ease, transform 1s ease;
     opacity: 1;
     position: relative;
-    z-index: 3; }
+    z-index: 3;
+    width: 100%; }
     #banner > .inner > :last-child {
       margin-bottom: 0; }
   #banner h1 {
@@ -1890,6 +1884,9 @@ ul.icons {
     #cta .testimonials .content .credit strong {
       color: #300684; }
   #cta .inner {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 0.4rem;
+    padding: 0.6rem;
     position: relative;
     z-index: 3; }
 

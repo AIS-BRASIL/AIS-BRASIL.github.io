@@ -1,20 +1,28 @@
 @media screen and (max-width: 720px)
 {
-  #homebuttons{
-    display: none;
-  }
+  #banner .inner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+  #banner .inner p {
+    font-size: 1rem; }
 
   #homebuttons{
-  position: fixed;
-  bottom: 0;
-}
-#homebuttons a
-{
-  padding: 0;
-  width: 100%;
-  margin-bottom: 0.3rem; }
-  #homebuttons a:last-child{
-    margin-bottom: 1rem;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; }
+  #homebuttons .inner a {
+    padding: 0;
+    width: inherit;
+    margin-bottom: 0.3rem;
+    background-color: #fff;
+    color: #300684 !important; }
+  #homebuttons .inner a:last-child{
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+    color: #fff !important;
+    box-shadow: inset 0 0 0 1px #fff;
   }
 
   ul.alt{
@@ -24,7 +32,14 @@
   ul.alt li {
     width: 100vw;
     padding: 0.5rem 0; }
+
   #cta{
-    height: 100vh;
+    height: 100vh; }
+
+  #wrapper-by-mobile{
+    height: 80vh;
+  }
+  #footer{
+    height: 20vh;
   }
 }
