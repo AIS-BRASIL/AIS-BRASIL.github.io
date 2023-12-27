@@ -1,9 +1,9 @@
 #cta {
-  border-top: solid 1px #000;
   background-color: #CCCCCC;
   color: rgba(255, 255, 255, 0.9);
+  font-weight: 800;
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(84, 22, 166, 0.25), rgba(84, 22, 166, 0.25)), url(../../images/cta01.jpg);
+  background-image: linear-gradient(rgba(84, 22, 166, 0.25), rgba(84, 22, 166, 0.25)), url(../../../images/cta01.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,7 +140,7 @@
     #cta .testimonials .content .credit strong {
       color: #300684; }
   #cta .inner {
-    background-color: rgba(0,0,0,0.2);
+    max-width: 60vw;
     border-radius: 0.4rem;
     padding: 0.6rem;
     position: relative;

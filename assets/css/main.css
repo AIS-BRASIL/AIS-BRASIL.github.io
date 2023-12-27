@@ -1,3 +1,6 @@
+@import url(./vendors/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+
 @import url(./utils/variables.css);
 
 @import url(./base/mobile.css);
@@ -10,7 +13,6 @@
 @import url(./components/copyright.css);
 @import url(./components/cta.css);
 @import url(./components/footer.css);
-@import url(./components/header.css);
 @import url(./components/heading.css);
 @import url(./components/highlights.css);
 @import url(./components/icons.css);
@@ -19,12 +21,10 @@
 @import url(./components/lists.css);
 @import url(./components/main.css);
 @import url(./components/menu.css);
+@import url(./components/header.css);
 @import url(./components/tables.css);
 
 @import url(./pages/sobre.css);
-
-@import url(./vendors/font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
 
 
 .inner

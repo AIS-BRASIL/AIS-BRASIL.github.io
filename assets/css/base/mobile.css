@@ -10,11 +10,12 @@
     display: none;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 10; }
     #homebuttons .inner{
       background-color: transparent !important;
       padding: 0 !important;
+      width: 100%;
     }
   #homebuttons .inner a {
     padding: 0;
